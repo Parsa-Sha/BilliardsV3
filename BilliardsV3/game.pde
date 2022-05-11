@@ -75,11 +75,11 @@ void game() {
     FBox left = new FBox(10, 325);
     FBox right = new FBox(10, 325);
     topLeft.setPosition(270, 100); 
-    topRight.setPosition(505 + 185, 500);
-    bottomLeft.setPosition(270, 100);
-    bottomRight.setPosition(270, 100);
-    left.setPosition(270, 100);
-    right.setPosition(270, 100);
+    topRight.setPosition(690, 100);
+    bottomLeft.setPosition(270, 500);
+    bottomRight.setPosition(690, 500);
+    left.setPosition(45, 135 + 325/2);
+    right.setPosition(915, 135 + 325/2);
     
 
 
