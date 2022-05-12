@@ -1,5 +1,4 @@
 void newGame() {
-
   newGame = false;
 
   for (int i = 0; i < ballArrangement.length; i++) ballArrangement[i] = 16;
@@ -35,6 +34,7 @@ void newGame() {
   pb.attachImage(ballImages[0]);
   pb.setFillColor(0);
   pb.setFriction(0.5);
+  pb.setRestitution(0.9);
   pb.setStatic(false);
   pb.setGrabbable(false);
   myBalls.add(pb);
@@ -115,6 +115,7 @@ void newGame() {
       b.attachImage(ballImages[ballArrangement[15-bpi]]);
       b.setPosition(800 - i*22.52, 250 + j*26 + i*13);
       b.setFriction(0.5);
+      b.setRestitution(0.9);
       b.setStatic(false);
       b.setGrabbable(false);
       bpi++;
