@@ -16,13 +16,16 @@ void game() {
   background(200);
   image(table, width/2, height-480/2);
 
+
   
+
+  /*
   for (int i = 0; i < myBalls.size(); i++) {
     objectBall = myBalls.get(i);
     objectBall.show();
     objectBall.act();
   }
-  
+  */
   
   /*
   rect(85, 95, 370, 10); // Testing
@@ -35,7 +38,10 @@ void game() {
    */
 
   if (newGame) newGame();
-
+  
+  
+  println(pb.getX());
+  
   world.step();
   world.draw();
 

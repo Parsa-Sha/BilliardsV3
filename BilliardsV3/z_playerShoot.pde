@@ -1,4 +1,4 @@
-PVector mouseStart, mouseEnd, velocity;
+  PVector mouseStart, mouseEnd, velocity;
 boolean hasPressed;
 float rotationPressed;
 float testVelocity;
@@ -68,7 +68,7 @@ void mouseReleased() {
     // New NEW testing May 10
     endPressed = new PVector(mouseX, mouseY);
     newVel = beginPressed.sub(endPressed);
-    newVel.setMag(40);
-    myBalls.get(0).vel = newVel;
+    newVel.setMag(100);
+    pb.setVelocity(newVel.x, newVel.y);
   }
 }

@@ -27,6 +27,8 @@ PImage table;
 PImage stick;
 PImage[] ballImages = new PImage[16];
 
+PlayerBall pb = null;
+
 void setup() {
   size(960, 540);
   Fisica.init(this);

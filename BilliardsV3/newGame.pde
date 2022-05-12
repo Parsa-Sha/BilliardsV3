@@ -26,18 +26,20 @@ void newGame() {
       selectionCleared = 0; // Place id into index, then reset
     }
   }
-
+  
   myBalls = new ArrayList<Ball>();
   world = new FWorld();
   world.setGravity(0, 0);
-  PlayerBall pb = new PlayerBall();
+  pb = new PlayerBall();
+  pb.setPosition(263, 305);
   pb.attachImage(ballImages[0]);
+  pb.setFillColor(0);
   pb.setFriction(0.5);
   pb.setStatic(false);
   pb.setGrabbable(false);
   myBalls.add(pb);
   world.add(pb);
-
+  
   // Create all six bumpers
   FBox topLeft = new FBox(370, 10);
   FBox topRight = new FBox(370, 10);
@@ -61,6 +63,14 @@ void newGame() {
   bottomRight.setStatic(true);
   left.setStatic(true);
   right.setStatic(true);
+  
+  // Make sure they can't be grabbed
+  topLeft.setGrabbable(false);
+  topRight.setGrabbable(false);
+  bottomLeft.setGrabbable(false);
+  bottomRight.setGrabbable(false);
+  left.setGrabbable(false);
+  right.setGrabbable(false);
   
   // Set noStroke and noFill
   topLeft.setNoFill();
@@ -98,7 +108,7 @@ void newGame() {
 
   int bpi = 1; // Ball placed index, used to refrence which ball should be placed where
   for (int i = 0; i < 5; i++) {
-    for (int j = 0; j < 5-i; j++) {
+    for (int j = 0; j < 5-i; j++) { // Convert to ball array for Fisica
       Ball b = new Ball();
       myBalls.add(b);
       world.add(b);
