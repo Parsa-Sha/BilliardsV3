@@ -28,6 +28,7 @@ class Ball extends FCircle {
     pos.add(vel);
     vel.setMag(vel.mag()*0.975);
     
+    /*
     if (pos.y - size/2 <= 105 && pos.x + size/2 >= 85 && pos.x - size/2 <= 455) vel.y *= -1; // Top left bumper
     if (pos.y - size/2 <= 105 && pos.x + size/2 >= 505 && pos.x - size/2 <= 875) vel.y *= -1; // Top right bumper
     if (pos.y + size/2 >= 495 && pos.x + size/2 >= 85 && pos.x - size/2 <= 455) vel.y *= -1; // Bottom left bumper
@@ -35,6 +36,7 @@ class Ball extends FCircle {
     
     if (pos.x - size/2 <= 50 && pos.y + size/2 >= 135 && pos.y - size/2 <= 455) vel.x *= -1; // Left bumper
     if (pos.x + size/2 >= 910 && pos.y + size/2 >= 135 && pos.y - size/2 <= 455) vel.x *= -1; // Right bumper
+    */
   }
   
 }
