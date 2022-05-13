@@ -1,3 +1,6 @@
+// BilliardsV3 
+// Introduction to Fisica, using basic ball and box collisions
+
 import fisica.*;
 
 FWorld world;
@@ -53,7 +56,6 @@ void setup() {
   ballImages[13] = loadImage("balls\\13ball.png");
   ballImages[14] = loadImage("balls\\14ball.png");
   ballImages[15] = loadImage("balls\\15ball.png");
-  imageMode(CENTER);
   
   myBalls = new ArrayList<Ball>();
 }
