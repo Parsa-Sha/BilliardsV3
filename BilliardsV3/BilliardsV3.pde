@@ -13,7 +13,7 @@ final int GAME = 1;
 final int PAUSE = 2;
 final int GAMEWON = 3;
 final int GAMEOVER = 4;
-int mode = GAME;
+int mode = INTRO;
 
 final int PLAYERBEGIN = 0;
 final int PLAYERPLACE = 1;

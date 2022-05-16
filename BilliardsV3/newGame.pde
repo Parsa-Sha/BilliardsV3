@@ -94,17 +94,15 @@ void newGame() {
   world.add(left);
   world.add(right);
 
-
-    /*
-    rect(85, 95, 370, 10); // Testing
-    rect(505, 95, 370, 10);
-    rect(85, 495, 370, 10);
-    rect(505, 495, 370, 10);
-    rect(40, 135, 10, 325);
-    rect(910, 135, 10, 325);
-    ellipse(60, 115, 26, 26);
-    */
-
+  /*
+  rect(85, 95, 370, 10); // Testing
+  rect(505, 95, 370, 10);
+  rect(85, 495, 370, 10);
+  rect(505, 495, 370, 10);
+  rect(40, 135, 10, 325);
+  rect(910, 135, 10, 325);
+  ellipse(60, 115, 26, 26);
+  */
 
   int bpi = 1; // Ball placed index, used to refrence which ball should be placed where
   for (int i = 0; i < 5; i++) {

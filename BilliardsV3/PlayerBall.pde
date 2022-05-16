@@ -6,12 +6,4 @@ class PlayerBall extends Ball {
     size = 26;
     id = 0;
   }  
-  
-  void show() {
-    image(ballImages[0], pos.x, pos.y);
-  }
-  
-  void act() {
-    super.act();
-  }
 }

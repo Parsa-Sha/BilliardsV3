@@ -27,12 +27,12 @@ void game() {
   for (int i = 0; i < myBalls.size(); i++) {
     Ball b = myBalls.get(i);
     if (
-    dist(b.getX(), b.getY(), 50, 107) < 15 ||
-    dist(b.getX(), b.getY(), 50, 498) < 15 ||
-    dist(b.getX(), b.getY(), 910, 107) < 15 ||
-    dist(b.getX(), b.getY(), 910, 498) < 15 ||
-    dist(b.getX(), b.getY(), 480, 107) < 15 ||
-    dist(b.getX(), b.getY(), 480, 498) < 15 
+      dist(b.getX(), b.getY(), 50, 107) < 16 ||
+      dist(b.getX(), b.getY(), 50, 498) < 16 ||
+      dist(b.getX(), b.getY(), 910, 107) < 16 ||
+      dist(b.getX(), b.getY(), 910, 498) < 16 ||
+      dist(b.getX(), b.getY(), 480, 107) < 16 ||
+      dist(b.getX(), b.getY(), 480, 498) < 16 
     ) {
       if (i == 0) mode = GAMEOVER;
       world.remove(b);
@@ -41,12 +41,9 @@ void game() {
     gameWon += i;
   }
   
-  if (gameWon == 0) mode = GAMEWON;
+  if (gameWon == 0 || keyPressed && key=='5') mode = GAMEWON;
   
-  
-  
-  
-  switch(gameState) {
+  switch(gameState) { // Potential for V4 with proper game rules, two player, and proper velocity input
   case PLAYERBEGIN:
     playerBegin();
     break;
